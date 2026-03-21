@@ -1,4 +1,3 @@
 #!/usr/bin/env nu
-keymap parse -z config/urchin.keymap -o keymap_out/urchin_keymap.yaml
-cat keymap_config.yaml out>> keymap_out/urchin_keymap.yaml
-keymap draw keymap_out/urchin_keymap.yaml -o keymap_out/urchin_keymap.svg
+keymap -c keymap_config.yaml parse -z config/urchin.keymap -o keymap_out/urchin_keymap.yaml
+keymap -c keymap_config.yaml draw keymap_out/urchin_keymap.yaml -o keymap_out/urchin_keymap.svg
