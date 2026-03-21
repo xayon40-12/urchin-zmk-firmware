@@ -55,6 +55,15 @@
 
 	combos {
 		compatible = "zmk,combos";
+	    /*
+	      KEY POSITIONS
+	      ╭────────────────────╮  ╭────────────────────╮
+	      │  0   1   2   3   4 │  │  5   6   7   8   9 │
+	      │ 10  11  12  13  14 │  │ 15  16  17  18  19 │
+	      │ 20  21  22  23  24 │  │ 25  26  27  28  29 │
+	      ╰───────────╮ 30  31 │  │ 32  33 ╭───────────╯
+	                  ╰────────╯  ╰────────╯
+	    */
 		// both right thumb keys
 		combo_accent {
 			timeout-ms = <200>;
@@ -75,12 +84,12 @@
 		};
 		// left index & middle fingers (home-row)
 		// hold control & space for Adobe workflow
-		combo_ctrl_space {
-			timeout-ms = <200>;
-			key-positions = <12 13>;
-			bindings = <&kp LC(SPACE)>;
-			layers = <BASE>;
-		};
+		// combo_ctrl_space {
+		// 	timeout-ms = <200>;
+		// 	key-positions = <12 13>;
+		// 	bindings = <&kp LC(SPACE)>;
+		// 	layers = <BASE>;
+		// };
 	};
 
 	keymap {
@@ -114,7 +123,7 @@
 			&kp ESC  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
 			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
-																		&trans &kp LCTRL    &kp ENTER  &mo FNC 
+													&trans &kp LCTRL    &kp ENTER  &mo FNC 
 			>;
 		};
 
