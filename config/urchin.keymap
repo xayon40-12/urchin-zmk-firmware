@@ -47,7 +47,7 @@
 			bindings = <&kp>, <&kp>;
 			compatible = "zmk,behavior-hold-tap";
 			label = "QUICK_TAP";
-			flavor = "hold-preferred";
+			flavor = "balanced";
             tapping-term-ms = <TAPPING_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
