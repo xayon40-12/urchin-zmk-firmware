@@ -18,29 +18,64 @@
 #define SETTINGS 4
 // -----------------
 
+// Behaviors Constants
+#define TAPPING_TERM_MS 280
+#define QUICK_TAP_MS 175
+#define REQUIRE_PRIOR_IDLE_MS 150
+
+// Combos Constants
+#define COMBO_TERM_DEFAULT 30
+#define COMBO_QUICK_TAP_MS 100
+
+// Key positions per hand
+#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
+#define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
+#define THUMBS 30 31 32 33
+
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
-    timeout-ms = <200>; \
+    timeout-ms = <COMBO_TERM_DEFAULT>; \
+    require-prior-idle-ms = <COMBO_QUICK_TAP_MS>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    require-prior-idle-ms = <100>; \
   };
 
 / {
 	behaviors {
-		// Enables holding the first mod-tap key
-		// by performing a tap-release-hold sequence.
-		// To use it: "&qt KEYCODE1 KEYCODE2"
 		qt: quick_tap {
+			bindings = <&kp>, <&kp>;
 			compatible = "zmk,behavior-hold-tap";
 			label = "QUICK_TAP";
-			#binding-cells = <2>;
 			flavor = "hold-preferred";
-			tapping-term-ms = <200>;
-			quick-tap-ms = <200>;
-			bindings = <&kp>, <&kp>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+			#binding-cells = <2>;
 		};
+		
+		hrml: hrm_left {
+            bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+            #binding-cells = <2>;
+        };
+        hrmr: hrm_right {
+            bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+            tapping-term-ms = <TAPPING_TERM_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+            #binding-cells = <2>;
+        };
 	};
 
 	macros {
@@ -79,7 +114,7 @@
 			   &kp DV_SQT      &kp DV_COMMA    &kp DV_DOT      &kp DV_P        &kp DV_Y            &kp DV_F        &kp DV_G        &kp DV_C        &kp DV_R        &kp DV_L 
 			// ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 			// │10             │11             │12             │12             │13             │   │14             │15             │16             │17             │18             │
-			   &qt LCTRL DV_A  &qt LGUI DV_O   &qt LGUI DV_E   &qt LALT DV_U   &qt RALT DV_I       &qt RALT DV_D   &qt LALT DV_H   &qt LGUI DV_T    &qt LGUI DV_N   &qt LCTRL DV_S
+			   &hrml LCTRL DV_A&hrml LGUI DV_O &hrml LSHIFT DV_E&hrml LALT DV_U&hrml RALT DV_I     &hrmr RALT DV_D &hrmr LALT DV_H &hrmr LSHIFT DV_T&hrmr LGUI DV_N&hrmr LCTRL DV_S
 			// ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 			// │19             │20             │21             │23             │24             │   │25             │26             │27             │28             │29             │
 			   &kp DV_SEMI     &kp DV_Q        &kp DV_J        &kp DV_K        &kp DV_X            &kp DV_B        &kp DV_M        &kp DV_W        &kp DV_V        &kp DV_Z
