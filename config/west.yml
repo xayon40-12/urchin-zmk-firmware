@@ -21,7 +21,7 @@ manifest:
       remote: duckyb
       revision: main
     - name: zmk-locales
-      remote: joelpadin
+      remote: joelspadin
       revision: main
   self:
     path: config
