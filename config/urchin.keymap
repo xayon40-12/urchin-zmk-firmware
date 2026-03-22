@@ -100,7 +100,11 @@
 	      ╰───────────╮ 30  31 │  │ 32  33 ╭───────────╯
 	                  ╰────────╯  ╰────────╯
 	    */
-		COMBO(settings, &mo SETTINGS, 30 31, BASE)
+		COMBO(settings, &sl SETTINGS, 4 5, BASE)
+		COMBO(tab, &kp TAB, 13 14, BASE)
+		COMBO(esc, &kp ESC, 15 16, BASE)
+		COMBO(ctrl, &kp LCTRL, 30 31, BASE)
+		COMBO(gui, &kp LGUI, 32 33, BASE)
 	};
 
 	keymap {
@@ -120,7 +124,7 @@
 			   &kp DV_SEMI     &kp DV_Q        &kp DV_J        &kp DV_K        &kp DV_X            &kp DV_B        &kp DV_M        &kp DV_W        &kp DV_V        &kp DV_Z
 			// ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 			//                                                 │30             │31             │   │32             │33             │
-					                                           &mo SYM         &qt LSHIFT SPACE    &qt LSHIFT ENTER&mo EXT
+					                                           &mo SYM         &qt LSHIFT SPACE    &qt LALT ENTER&mo EXT
 			//                                                 ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
 			>;
 		};
@@ -153,13 +157,13 @@
 			bindings = <
 			// ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
 			// │0              │1              │2              │3              │4              │   │5              │6              │7              │8              │9              │
-			   &none           &none           &none           &none           &none               &none           &none           &kp UP          &none           &none 
+			   &none           &none           &none           &none           &none               &none           &kp HOME        &kp UP          &kp END         &kp PG_UP 
 			// ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 			// │10             │11             │12             │12             │13             │   │14             │15             │16             │17             │18             │
-			   &kp DV_GRAVE    &kp DV_TILDE    &kp DV_MINUS    &kp DV_UNDER    &none               &none           &kp LEFT        &kp DOWN        &kp RIGHT       &none 
+			   &kp DV_GRAVE    &kp DV_TILDE    &kp DV_MINUS    &kp DV_UNDER    &none               &none           &kp LEFT        &kp DOWN        &kp RIGHT       &kp PG_DN
 			// ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 			// │19             │20             │21             │23             │24             │   │25             │26             │27             │28             │29             │
-			   &none           &none           &kp TAB         &kp ESC         &none               &none           &none           &none           &none           &none
+			   &none           &none           &kp TAB         &kp ESC         &none               &kp C_PP        &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREV      &kp C_NEXT
 			// ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 			//                                                 │30             │31             │   │32             │33             │
 													           &mo FNC         &none               &none           &none 
