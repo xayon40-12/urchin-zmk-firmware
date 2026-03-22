@@ -97,8 +97,8 @@ layers:
   - ⎋
   - ''
   - ⏯
-  - 🔉
-  - 🔊
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
   - ⏮
   - ⏭
   - Fn
@@ -141,44 +141,51 @@ layers:
   - ''
   - {type: held}
   Sett:
-  - '&bootloader'
+  - {t: '$$mdi:progress-download$$', type: held}
   - ''
   - ''
-  - BT CLR
-  - {t: BT, h: '0', type: held}
-  - {t: BT, h: '3', type: held}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
   - ''
-  - '&unstick'
+  - $$mdi:backup-restore$$
   - ''
-  - '&bootloader'
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '1'}
-  - {t: BT, h: '4'}
+  - $$mdi:progress-download$$
   - ''
   - ''
   - ''
   - ''
-  - '&studio_unlock'
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   - ''
   - ''
   - ''
-  - {t: BT, h: '2'}
-  - {t: BT, h: '5'}
+  - ''
+  - {type: held}
   - ''
   - ''
   - ''
-  - '&studio_unlock'
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - ''
 combos:
-- p: [4, 5]
+- p: [0, 20]
   k: {t: Sett, h: sticky}
   l: [Base]
+  a: left
+  o: 0.25
+- p: [9, 29]
+  k: {t: Sett, h: sticky}
+  l: [Base]
+  a: right
+  o: 0.25
 - p: [13, 14]
   k: ⇥
   l: [Base]

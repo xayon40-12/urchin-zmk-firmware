@@ -100,7 +100,8 @@
 	      ╰───────────╮ 30  31 │  │ 32  33 ╭───────────╯
 	                  ╰────────╯  ╰────────╯
 	    */
-		COMBO(settings, &sl SETTINGS, 4 5, BASE)
+		COMBO(settings_l, &sl SETTINGS, 0 20, BASE)
+		COMBO(settings_r, &sl SETTINGS, 9 29, BASE)
 		COMBO(tab, &kp TAB, 13 14, BASE)
 		COMBO(esc, &kp ESC, 15 16, BASE)
 		COMBO(ctrl, &kp LCTRL, 30 31, BASE)
@@ -203,7 +204,7 @@
 			   &none           &none           &none           &none           &bt BT_SEL 1        &bt BT_SEL 4    &none           &none           &none           &none
 			// ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 			// │19             │20             │21             │23             │24             │   │25             │26             │27             │28             │29             │
-			   &studio_unlock  &none           &none           &none           &bt BT_SEL 2        &bt BT_SEL 5    &none           &none           &none           &studio_unlock
+			   &none           &none           &none           &none           &bt BT_SEL 2        &bt BT_SEL 5    &none           &none           &none           &none
 			// ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 			//                                                 │30             │31             │   │32             │33             │
 										                       &none           &none               &none           &none 
