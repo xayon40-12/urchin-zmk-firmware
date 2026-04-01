@@ -106,10 +106,14 @@
 		COMBO(esc, &kp ESC, 15 16, BASE)
 		COMBO(ctrl, &kp LCTRL, 30 31, BASE)
 		COMBO(gui, &kp LGUI, 32 33, BASE)
-		COMBO(tilde, &kp DV_TILDE, 2 12, SYM)
-		COMBO(grave, &kp DV_GRAVE, 12 22, SYM)
-		COMBO(under, &kp DV_UNDER, 3 13, SYM)
-		COMBO(minus, &kp DV_MINUS, 13 23, SYM)
+		COMBO(tilde, &kp DV_TILDE, 2 12, BASE)
+		COMBO(grave, &kp DV_GRAVE, 12 22, BASE)
+		COMBO(under, &kp DV_UNDER, 3 13, BASE)
+		COMBO(minus, &kp DV_MINUS, 13 23, BASE)
+		COMBO(tilde, &kp DV_TILDE, 6 16, BASE)
+		COMBO(grave, &kp DV_GRAVE, 16 26, BASE)
+		COMBO(under, &kp DV_UNDER, 7 17, BASE)
+		COMBO(minus, &kp DV_MINUS, 17 27, BASE)
 	};
 
 	keymap {

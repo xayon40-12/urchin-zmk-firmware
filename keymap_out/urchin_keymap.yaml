@@ -200,13 +200,25 @@ combos:
   l: [Base]
 - p: [2, 12]
   k: '~'
-  l: [Sym]
+  l: [Base]
 - p: [12, 22]
   k: '`'
-  l: [Sym]
+  l: [Base]
 - p: [3, 13]
   k: _
-  l: [Sym]
+  l: [Base]
 - p: [13, 23]
   k: '-'
-  l: [Sym]
+  l: [Base]
+- p: [6, 16]
+  k: '~'
+  l: [Base]
+- p: [16, 26]
+  k: '`'
+  l: [Base]
+- p: [7, 17]
+  k: _
+  l: [Base]
+- p: [17, 27]
+  k: '-'
+  l: [Base]
