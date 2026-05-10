@@ -72,10 +72,10 @@
 		COMBO(settings_r, &sl SETTINGS, 9 29, BASE)
 		COMBO(tab, &kp TAB, 13 14, BASE)
 		COMBO(esc, &kp ESC, 15 16, BASE)
-		COMBO(lctrl_l, &kp LCTRL, 1 11, BASE)
-		COMBO(lgui_l, &kp LGUI, 2 12, BASE)
-		COMBO(lctrl_r, &kp LCTRL, 8 18, BASE)
-		COMBO(lgui_r, &kp LGUI, 7 17, BASE)
+		COMBO(lctrl_l, &kp LCTRL, 2 12, BASE)
+		COMBO(lgui_l, &kp LGUI, 3 13, BASE)
+		COMBO(lgui_r, &kp LGUI, 6 16, BASE)
+		COMBO(lctrl_r, &kp LCTRL, 7 17, BASE)
 	};
 
 	keymap {
