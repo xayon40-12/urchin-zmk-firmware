@@ -1,40 +1,6 @@
 layout: {zmk_keyboard: urchin}
 layers:
-  Base:
-  - ''''
-  - ','
-  - .
-  - P
-  - Y
-  - F
-  - G
-  - C
-  - R
-  - L
-  - A
-  - O
-  - E
-  - U
-  - I
-  - D
-  - H
-  - T
-  - N
-  - S
-  - ;
-  - Q
-  - J
-  - K
-  - X
-  - B
-  - M
-  - W
-  - V
-  - Z
-  - Sym
-  - {t: ␣, h: ⇧}
-  - {t: ⏎, h: ⌥}
-  - Ext
+  Base: ['''', ',', ., P, Y, F, G, C, R, L, A, O, E, U, I, D, H, T, N, S, ;, Q, J, K, X, B, M, W, V, Z, Sym, ␣, ⏎, Ext]
   Sym:
   - '!'
   - '@'
@@ -71,12 +37,12 @@ layers:
   - ⌫
   - Fn
   Ext:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ç
+  - é
+  - à
+  - è
+  - ù
+  - ë
   - ↖
   - ↑
   - ↘
@@ -86,23 +52,23 @@ layers:
   - '-'
   - _
   - ''
-  - ''
+  - ï
   - ←
   - ↓
   - →
   - ⇟
-  - ''
-  - ''
-  - ⇥
-  - ⎋
-  - ''
-  - ⏯
+  - â
+  - ê
+  - î
+  - ô
+  - û
+  - ü
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$
-  - ⏮
-  - ⏭
+  - ''
+  - ''
   - Fn
-  - ⌥
+  - ''
   - ''
   - {type: held}
   Fn:
@@ -192,15 +158,30 @@ combos:
 - p: [15, 16]
   k: ⎋
   l: [Base]
+- p: [23, 24]
+  k: ⇪
+  l: [Base]
 - p: [2, 12]
   k: ⌃
+  l: [Base]
+- p: [12, 22]
+  k: ⇧
   l: [Base]
 - p: [3, 13]
   k: ⌘
   l: [Base]
+- p: [13, 23]
+  k: ⌥
+  l: [Base]
 - p: [6, 16]
   k: ⌘
   l: [Base]
+- p: [16, 26]
+  k: ⌥
+  l: [Base]
 - p: [7, 17]
   k: ⌃
+  l: [Base]
+- p: [17, 27]
+  k: ⇧
   l: [Base]

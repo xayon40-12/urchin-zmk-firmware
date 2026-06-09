@@ -26,6 +26,22 @@ parse_config:
   raw_binding_map:
     "&bootloader": $$mdi:progress-download$$
     "&unstick": $$mdi:backup-restore$$
+
+    "&ac_ccdi": 'ç'
+    "&ac_eacu": 'é'
+    "&ac_agrv": 'à'
+    "&ac_egrv": 'è'
+    "&ac_ugrv": 'ù'
+
+    "&ac_acir": 'â'
+    "&ac_ecir": 'ê'
+    "&ac_ucir": 'î'
+    "&ac_ocir": 'ô'
+    "&ac_icir": 'û'
+
+    "&ac_etre": 'ë'
+    "&ac_utre": 'ü'
+    "&ac_itre": 'ï'
   zmk_remove_keycode_prefix: ["DV_"]
   zmk_keycode_map:
     EXCLAMATION: '!'
