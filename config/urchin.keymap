@@ -73,7 +73,7 @@
 		COMBO(settings_r, &sl SETTINGS, 9 29, BASE)
 		COMBO(tab, &kp TAB, 13 14, BASE)
 		COMBO(esc, &kp ESC, 15 16, BASE)
-		COMBO(capslock, &caps_word, 23 24, BASE)
+		COMBO(capslock, &kp CAPS, 23 24, BASE)
 		COMBO(lctrl_l, &kp LCTRL, 2 12, BASE)
 		COMBO(lshift_l, &kp LSHIFT, 12 22, BASE)
 		COMBO(lgui_l, &kp LGUI, 3 13, BASE)
