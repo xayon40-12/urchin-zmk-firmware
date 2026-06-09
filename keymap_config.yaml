@@ -26,6 +26,7 @@ parse_config:
   raw_binding_map:
     "&bootloader": $$mdi:progress-download$$
     "&unstick": $$mdi:backup-restore$$
+    "&caps_word": ⇪
 
     "&ac_ccdi": 'ç'
     "&ac_eacu": 'é'

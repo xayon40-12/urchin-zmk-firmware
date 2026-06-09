@@ -18,12 +18,7 @@
             label = LABEL_L; \
             compatible = "zmk,behavior-macro"; \
             #binding-cells = <0>; \
-            bindings \
-                = <&macro_press &kp LALT> \
-                , <&macro_tap &kp DEAD_KEY> \
-                , <&macro_release &kp LALT> \
-                , <&macro_tap &kp KEY> \
-                ; \
+            bindings = <&macro_tap &kp LA(DEAD_KEY)>, <&macro_tap &kp KEY>; \
         }; \
         ac_##NAME##_u: ac_##NAME##_u { \
             wait-ms = <30>; \
@@ -31,15 +26,7 @@
             label = LABEL_U; \
             compatible = "zmk,behavior-macro"; \
             #binding-cells = <0>; \
-            bindings \
-                = <&macro_release &kp LSHFT> \
-                , <&macro_press &kp LALT> \
-                , <&macro_tap &kp DEAD_KEY> \
-                , <&macro_release &kp LALT> \
-                , <&macro_press &kp LSHFT> \
-                , <&macro_tap &kp KEY> \
-                , <&macro_release &kp LSHFT> \
-                ; \
+            bindings = <&macro_tap &kp LA(DEAD_KEY)>, <&macro_tap &kp LS(KEY)>; \
         }; \
         ac_##NAME: ac_##NAME { \
             label = LABEL; \
@@ -56,11 +43,7 @@
             label = "ç";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp DV_C>
-                , <&macro_release &kp LALT>
-                ;
+            bindings = <&macro_tap &kp  LA(DV_C)>;
         };
         ACCENTED_KEY(eacu, "é", "É", "éÉ", DV_E, DV_E)
         ACCENTED_KEY(agrv, "à", "À", "àÀ", DV_A, DV_GRAVE)
