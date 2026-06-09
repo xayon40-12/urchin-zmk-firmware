@@ -58,7 +58,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&macro_tap &kp C>
+                , <&macro_tap &kp DV_C>
                 , <&macro_release &kp LALT>
                 ;
         };
@@ -74,7 +74,7 @@
         ACCENTED_KEY(icir, "û", "Û", "ûÛ", DV_U, DV_I)
 
         ACCENTED_KEY(etre, "ë", "Ë", "ëË", DV_E, DV_U)
-        ACCENTED_KEY(utre, "ï", "Ï", "ïÏ", DV_I, DV_U)
-        ACCENTED_KEY(itre, "ü", "Ü", "üÜ", DV_U, DV_U)
+        ACCENTED_KEY(itre, "ï", "Ï", "ïÏ", DV_I, DV_U)
+        ACCENTED_KEY(utre, "ü", "Ü", "üÜ", DV_U, DV_U)
     };
 };
