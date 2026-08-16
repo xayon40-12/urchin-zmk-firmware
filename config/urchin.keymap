@@ -85,6 +85,11 @@
 		COMBO(lshift_r, &kp LSHIFT, 17 27, BASE)
 		COMBO(game_l, &to GAME, 4 24, BASE)
 		COMBO(base_r, &to BASE, 5 25, GAME)
+		COMBO(game_1, &kp 1, 0 10, GAME)
+		COMBO(game_2, &kp 2, 1 11, GAME)
+		COMBO(game_3, &kp 3, 2 12, GAME)
+		COMBO(game_4, &kp 4, 3 13, GAME)
+		COMBO(game_5, &kp 5, 4 14, GAME)
 	};
 
 	keymap {
@@ -197,16 +202,16 @@
 			bindings = <
 		// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
 		// │0             │1             │2             │3             │4             │   │5             │6             │7             │8             │9             │
-		   &kp TAB        &kp DV_SQT     &kp DV_COMMA   &kp DV_DOT     &kp DV_P       &kp DV_Y           &kp DV_F       &kp DV_G       &kp DV_C       &kp DV_R
+		   &kp TAB        &kp DV_SQT     &kp DV_COMMA   &kp DV_DOT     &kp DV_P           &kp DV_F       &kp DV_G       &kp DV_C       &kp DV_R       &kp DV_L
 		// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
 		// │10            │11            │12            │12            │13            │   │14            │15            │16            │17            │18            │
-		   &kp LSHIFT     &kp DV_A       &kp DV_O       &kp DV_E       &kp DV_U       &kp DV_I           &kp DV_D       &kp DV_H       &kp DV_T       &kp DV_N
+		   &kp LSHIFT     &kp DV_A       &kp DV_O       &kp DV_E       &kp DV_U           &kp DV_D       &kp DV_H       &kp DV_T       &kp DV_N       &kp DV_S
 		// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
 		// │19            │20            │21            │23            │24            │   │25            │26            │27            │28            │29            │
-		   &kp LCTRL      &kp DV_SEMI    &kp DV_Q       &kp DV_J       &kp DV_K       &kp DV_X           &kp DV_B       &kp DV_M       &kp DV_W       &kp DV_V
+		   &kp LCTRL      &kp DV_SEMI    &kp DV_Q       &kp DV_J       &kp DV_K           &kp DV_B       &kp DV_M       &kp DV_W       &kp DV_V       &kp DV_Z
 		// ╰──────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┴──────────────┴──────────────╯
 		//                                              │30            │31            │   │32            │33            │
-				                                        &mo SYM        &kp SPACE          &kp ENTER      &mo EXT
+				                                        &kp SPACE      &kp ESCAPE         &kp ENTER      &mo EXT
 		//                                              ╰──────────────┴──────────────╯   ╰──────────────┴──────────────╯
 			>;
 		};
