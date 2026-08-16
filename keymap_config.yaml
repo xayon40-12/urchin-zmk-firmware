@@ -153,6 +153,12 @@ parse_config:
     combo_settings_r:
       align: right
       offset: 0.25
+    combo_game_l:
+      align: right
+      offset: 0.25
+    combo_base_r:
+      align: left
+      offset: 0.25
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
 draw_config:
